@@ -9,3 +9,12 @@ require('./assets/scripts/index.js')
 
 // styles
 require('./assets/styles/index.scss')
+
+console.log("functional")
+
+const createBoard = function () {
+  $('#signUp').hide()
+  $('.gameBoard').removeClass('hidden')
+}
+
+$('#hideButton').click(createBoard)
