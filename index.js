@@ -163,3 +163,27 @@ $('.box').click(checkForWin)
 //-----------------------------------------------------------
 // End - checkForWin Function and Event -------------------
 //-----------------------------------------------------------
+
+
+//-----------------------------------------------------------
+// START - gameReset Function and Event -------------------
+//-----------------------------------------------------------
+const gameReset = function () {
+  $('#A1').removeClass('symX symO')
+  $('#A2').removeClass('symX symO')
+  $('#A3').removeClass('symX symO')
+  $('#B1').removeClass('symX symO')
+  $('#B2').removeClass('symX symO')
+  $('#B3').removeClass('symX symO')
+  $('#C1').removeClass('symX symO')
+  $('#C2').removeClass('symX symO')
+  $('#C3').removeClass('symX symO')
+  winner = " "
+  turnCount = 0
+  playerTurn = 'x'
+}
+
+$('#reset').click(gameReset)
+//-----------------------------------------------------------
+// End - gameReset Function and Event -------------------
+//-----------------------------------------------------------
