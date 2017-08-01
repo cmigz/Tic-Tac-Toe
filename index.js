@@ -19,9 +19,10 @@ let turnCount = 0
 console.log(turnCount)
 let winner = '' // Options in checkForWin = playerX, playerO, Draw
 let playerTurn = 'x'
-
+let xWinCount = 0
+let oWinCount = 0
 //-----------------------------------------------------------
-// START - Game Variables -------------------
+// END - Game Variables -------------------
 //-----------------------------------------------------------
 
 
@@ -93,6 +94,7 @@ $('.box').click(playerToggle)
 
 //-----------------------------------------------------------
 // START - checkForWin Function and Event -------------------
+// - Also adds to Win Count @ end of game for winning sym
 //-----------------------------------------------------------
 const checkForWin = function () {
   if (turnCount <= 8) {
@@ -123,7 +125,9 @@ const checkForWin = function () {
       $('#C1').hasClass('symX')
     ) {
       winner = "playerX"
-      console.log(winner)
+      console.log(winner + ' has won the game')
+      xWinCount++
+      console.log('X has won ' + xWinCount + ' games')
     } else if (
       $('#A1').hasClass('symO') &&
       $('#A2').hasClass('symO') &&
@@ -151,7 +155,9 @@ const checkForWin = function () {
       $('#C1').hasClass('symO')
     ) {
       winner = "playerO"
-      console.log(winner)
+      console.log(winner + ' has won the game')
+      oWinCount++
+      console.log('O has won ' + oWinCount + ' games')
     }
   } else if (turnCount > 8) {
     winner = "draw"
