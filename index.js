@@ -16,6 +16,7 @@ console.log("functional")
 //-----------------------------------------------------------
 
 let turnCount = 0
+console.log(turnCount)
 let winner = '' // Options in checkForWin = playerX, playerO, Draw
 let playerTurn = 'x'
 
@@ -37,6 +38,22 @@ $('#hideButton').click(createBoard)
 //-----------------------------------------------------------
 // End - createBoard Function and Event -------------------
 //-----------------------------------------------------------
+
+
+//-----------------------------------------------------------
+// START - turnCounter Function and Event -------------------
+//-----------------------------------------------------------
+const turnCounter = function () {
+  turnCount++
+  console.log(turnCount)
+}
+
+$('.box').click(turnCounter)
+
+//-----------------------------------------------------------
+// End - turnCounter Function and Event -------------------
+//-----------------------------------------------------------
+
 
 //-----------------------------------------------------------
 // START - addClass Function and Event -------------------
