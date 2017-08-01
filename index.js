@@ -90,3 +90,36 @@ $('.box').click(playerToggle)
 //-----------------------------------------------------------
 // End - playerToggle Function and Event -------------------
 //-----------------------------------------------------------
+
+//-----------------------------------------------------------
+// START - checkForWin Function and Event -------------------
+//-----------------------------------------------------------
+// const checkForWin = function () {
+//   if (turnCount > 5) {
+//     if (
+//       $('#A1').hasClass(symX) &&
+//       $('#A2').hasClass(symX) &&
+//       $('#A3').hasClass(symX) ||
+//       $('#B1').hasClass(symX) &&
+//       $('#B2').hasClass(symX) &&
+//       $('#B3').hasClass(symX) ||  // TODO Build in rest of win states
+//   ) {
+//       winner = "playerX"
+//     } else if (
+//       $('#A1').hasClass(symO) &&
+//       $('#A2').hasClass(symO) &&
+//       $('#A3').hasClass(symO) ||
+//       $('#B1').hasClass(symO) &&
+//       $('#B2').hasClass(symO) &&
+//       $('#B3').hasClass(symO) // TODO Build in rest of win states
+//     ) {
+//       winner = "playerO"
+//     } else if {
+//       winner = "draw"
+//     }
+//   }
+// }
+
+//-----------------------------------------------------------
+// End - checkForWin Function and Event -------------------
+//-----------------------------------------------------------
