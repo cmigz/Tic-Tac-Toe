@@ -54,6 +54,25 @@ $('.box').click(turnCounter)
 // End - turnCounter Function and Event -------------------
 //-----------------------------------------------------------
 
+//-----------------------------------------------------------
+// START - playerToggle Function and Event -------------------
+//-----------------------------------------------------------
+const playerToggle = function() {
+  if (playerTurn === "x") {
+    playerTurn = "o"
+    console.log(playerTurn)
+  } else {
+    playerTurn = "x"
+    console.log(playerTurn)
+  }
+}
+
+$('.box').click(playerToggle)
+
+//-----------------------------------------------------------
+// End - playerToggle Function and Event -------------------
+//-----------------------------------------------------------
+
 
 //-----------------------------------------------------------
 // START - addClass Function and Event -------------------
