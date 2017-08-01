@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Tic-Tac-Toe</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,14 +12,45 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
-      <h1>Example</h1>
+      <header>
+        <h1>Tic-Tac-Toe</h1>
+        <h2>By: Christian Mignacca</h2>
+      </header>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
+      <main>
+        <div id="signUp">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="userEmail" value="" placeholder="User Email">
+            <input type="text" name="userPassWord" value="" placeholder="Password">
+            <button type="submit" name="button" class="btn btn-default">Sign In</button>
+            <button type="submit" name="button" class="btn btn-default">Sign Up</button>
+          </form>
+        </div>
+        <div>
+          <button type="button" name="button" class="btn btn-default" id="hideButton">Hide</button>
+        </div>
+        <div class="gameBoard hidden">
+          <div class="col">
+            <div class="box" id="A1">A1</div>
+            <div class="box" id="B1">B1</div>
+            <div class="box" id="C1">C1</div>
+          </div>
+          <div class="col">
+            <div class="box" id="A2">A2</div>
+            <div class="box" id="B2">B2</div>
+            <div class="box" id="C2">C2</div>
+          </div>
+          <div class="col">
+            <div class="box" id="A3">A3</div>
+            <div class="box" id="B3">B3</div>
+            <div class="box" id="C3">C3</div>
+          </div>
+        </div>
+        <button type="button" id="reset">New Game</button>
+      </main>
+
+      <footer>
+        <!-- TODO Add Footer -->
+      </footer>
     </body>
 </html>
