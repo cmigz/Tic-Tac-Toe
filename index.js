@@ -11,10 +11,46 @@ require('./assets/scripts/index.js')
 require('./assets/styles/index.scss')
 
 console.log("functional")
+//-----------------------------------------------------------
+// START - Game Variables -------------------
+//-----------------------------------------------------------
 
+let turnCount = 0
+let winner = '' // Options in checkForWin = playerX, playerO, Draw
+let playerTurn = 'x'
+
+//-----------------------------------------------------------
+// START - Game Variables -------------------
+//-----------------------------------------------------------
+
+
+//-----------------------------------------------------------
+// START - createBoard Function and Event -------------------
+//-----------------------------------------------------------
 const createBoard = function () {
   $('#signUp').hide()
   $('.gameBoard').removeClass('hidden')
 }
 
 $('#hideButton').click(createBoard)
+
+//-----------------------------------------------------------
+// End - createBoard Function and Event -------------------
+//-----------------------------------------------------------
+
+//-----------------------------------------------------------
+// START - addClass Function and Event -------------------
+//-----------------------------------------------------------
+// TODO Add functionaliy to toggle between classes added
+const addClass = function () {
+  // if (playerTurn === 'x') {
+    $(this).addClass('symX')
+  // } else {
+  //   $('.box').addClass('symO')
+  // }
+}
+$('.box').click(addClass)
+
+//-----------------------------------------------------------
+// End - addClass Function and Event -------------------
+//-----------------------------------------------------------
