@@ -10,6 +10,12 @@ require('./assets/scripts/index.js')
 require('./assets/styles/index.scss')
 
 console.log('functional')
+
+// ========================================================
+// TODO
+// - Alter add Class function to incorporate turn Count
+//  - Tried, WAI but clicks still add to turn count??
+// ========================================================
 // -----------------------------------------------------------
 // START - Game Variables -------------------
 // -----------------------------------------------------------
