@@ -16,7 +16,6 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 -----------------------------------------------------------------------------*/
 
 body {
-  background-color: #3A3531;
   margin: 0;
   padding: 0;
 }
@@ -26,7 +25,7 @@ body {
   ___________________________________________________________________________*/
 
 h1, h3 {
-  color: #4ECBD6;
+  color: black;
   text-align: center;
 
 }
@@ -49,8 +48,6 @@ h1, h3 {
   ___________________________________________________________________________*/
 
 .gameBoard {
-  margin: 0 auto;
-  padding: 0 36%;
 }
 
 .symX {
@@ -70,11 +67,75 @@ h1, h3 {
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  border: 2px solid #008CAC;
+  height: 250px;
+  margin: 10px;
 }
 
+.row {
+  margin-left: 20%;
+}
+
+#A1 {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#A2 {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#A3 {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#B1 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#B2 {
+  border: 2px solid black;
+}
+
+#B3 {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#C1 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#C2 {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#C3 {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+
+@media (max-width: 667px) {
+  .box {
+    height: 125px;
+  }
+
+  .row {
+    margin-left: 3%;
+  }
+
+  .gameBoard {
+    margin-top: 20px;
+  }
+}
 /*-----------------------------------------------------------------------------
   Game Board - End
   ___________________________________________________________________________*/
