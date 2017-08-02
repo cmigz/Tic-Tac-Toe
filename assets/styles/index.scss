@@ -1,22 +1,13 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-/*-----------------------------------------------------------------------------
-  Color Palette
-  - Yellow: #F7B32D // RGB: 247, 179, 45;
-  - Light Orange: #FF664A // RGB: 255, 102, 74
-  - Light Blue: #4ECBD6 // RGB: 78, 203, 214
-  - Dark Gray: #3A3531 // RGB: 58, 53, 49
-  - Dark Blue: #008CAC // RGB: 0, 140, 172
-  ___________________________________________________________________________*/
-
 
 /*-----------------------------------------------------------------------------
   - Try adding clearfix to gameboard div
 -----------------------------------------------------------------------------*/
 
 body {
-  background-color: #3A3531;
+  background-color: #fed331;
   margin: 0;
   padding: 0;
 }
@@ -26,7 +17,7 @@ body {
   ___________________________________________________________________________*/
 
 h1, h3 {
-  color: #4ECBD6;
+  color: black;
   text-align: center;
 
 }
@@ -54,7 +45,7 @@ h1, h3 {
 }
 
 .symX {
-  background-color: blue;
+  background-image: url('../images/charlie.png');
 }
 
 .symO {
@@ -72,7 +63,7 @@ h1, h3 {
 .box {
   width: 100px;
   height: 100px;
-  border: 2px solid #008CAC;
+  border: 2px solid black;
 }
 
 /*-----------------------------------------------------------------------------
