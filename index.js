@@ -57,11 +57,18 @@ $('.box').click(turnCounter)
 // -----------------------------------------------------------
 const addClass = function () {
   if (playerTurn === 'x') {
-    $(this).addClass('symX')
+    if ($(this).hasClass('symO')) {
+    } else {
+      $(this).addClass('symX')
+    }
   } else {
-    $(this).addClass('symO')
+    if ($(this).hasClass('symX')) {
+    } else {
+      $(this).addClass('symO')
+    }
   }
 }
+
 $('.box').click(addClass)
 
 // -----------------------------------------------------------
