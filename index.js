@@ -45,32 +45,35 @@ $('#hideButton').click(createBoard)
 // -----------------------------------------------------------
 
 // -----------------------------------------------------------
-// START - turnCounter Function and Event -------------------
-// -----------------------------------------------------------
-const turnCounter = function () {
-  turnCount++
-  console.log(turnCount)
-}
-
-$('.box').click(turnCounter)
-
-// -----------------------------------------------------------
-// End - turnCounter Function and Event -------------------
-// -----------------------------------------------------------
-
-// -----------------------------------------------------------
 // START - addClass Function and Event -------------------
+// Will decide if it already has had a move made
+// If not it will add the class based on the curent player
+// Built in: turnCounter and playerToggle
 // -----------------------------------------------------------
 const addClass = function () {
   if (playerTurn === 'x') {
     if ($(this).hasClass('symO')) {
     } else {
-      $(this).addClass('symX')
+      if ($(this).hasClass('symX')) {
+      } else {
+        $(this).addClass('symX')
+        turnCount++
+        console.log(turnCount)
+        playerTurn = 'o'
+        console.log(playerTurn)
+      }
     }
   } else {
     if ($(this).hasClass('symX')) {
     } else {
-      $(this).addClass('symO')
+      if($(this).hasClass('symO')) {
+      } else {
+        $(this).addClass('symO')
+        turnCount++
+        console.log(turnCount)
+        playerTurn = 'x'
+        console.log(playerTurn)
+      }
     }
   }
 }
@@ -79,25 +82,6 @@ $('.box').click(addClass)
 
 // -----------------------------------------------------------
 // End - addClass Function and Event -------------------
-// -----------------------------------------------------------
-
-// -----------------------------------------------------------
-// START - playerToggle Function and Event -------------------
-// -----------------------------------------------------------
-const playerToggle = function () {
-  if (playerTurn === 'x') {
-    playerTurn = 'o'
-    console.log(playerTurn)
-  } else {
-    playerTurn = 'x'
-    console.log(playerTurn)
-  }
-}
-
-$('.box').click(playerToggle)
-
-// -----------------------------------------------------------
-// End - playerToggle Function and Event -------------------
 // -----------------------------------------------------------
 
 // -----------------------------------------------------------
