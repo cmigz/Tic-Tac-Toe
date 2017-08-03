@@ -22,12 +22,12 @@ const success = (data) => {
   console.log(data)
 }
 
-const failure = (error) => {
+const fail = (error) => {
   console.error(error)
 }
 
 module.exports = {
-  failure,
+  fail,
   success,
   signInSuccess,
   signOutSuccess,
