@@ -1,6 +1,6 @@
 'use strict'
 // remove signIn and signOut
-const app = require('../app.js')
+const app = require('../scripts/app.js')
 
 // remove me before code-along
 const signInSuccess = (data) => {

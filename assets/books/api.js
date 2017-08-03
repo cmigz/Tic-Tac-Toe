@@ -1,6 +1,6 @@
 'use strict'
 
-const app = require('../app')
+const app = require('../scripts/app')
 // const getFormFields = require('../../../lib/get-form-fields.js');
 
 // authApi.signUp(authUi.success, authUi.failure, data);
