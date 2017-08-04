@@ -120,6 +120,8 @@ const checkForWin = function () {
     console.log(winner + ' has won the game')
     xWinCount++
     console.log('X has won ' + xWinCount + ' games')
+    $('.gameBoard').addClass('hidden')
+    $('#xWins').removeClass('hidden')
   } else if (
     $('#A1').hasClass('symO') &&
     $('#A2').hasClass('symO') &&
@@ -150,8 +152,12 @@ const checkForWin = function () {
     console.log(winner + ' has won the game')
     oWinCount++
     console.log('O has won ' + oWinCount + ' games')
+    $('.gameBoard').addClass('hidden')
+    $('#oWins').removeClass('hidden')
   } else if (turnCount === 9) {
     console.log('draw')
+    $('.gameBoard').addClass('hidden')
+    $('#resultDraw').removeClass('hidden')
   }
 }
 
