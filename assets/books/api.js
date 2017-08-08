@@ -47,7 +47,10 @@ const changePassword = function (data) {
 const index = function () {
   return $.ajax({
     url: app.host + '/games',
-    method: 'GET'
+    method: 'GET',
+    headers: {
+      Authorization: 'Token token=' + app.user.token
+    }
   })
 }
 
