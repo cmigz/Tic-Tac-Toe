@@ -36,9 +36,17 @@ const onChangePassword = function (event) {
     .fail(ui.fail)
 }
 
+const onGetGames = function (event) {
+  event.preventDefault()
+  api.index()
+    .then(ui.sucess)
+    .catch(ui.fail)
+}
+
 module.exports = {
   onSignUp,
   onSignIn,
   onSignOut,
-  onChangePassword
+  onChangePassword,
+  onGetGames
 }

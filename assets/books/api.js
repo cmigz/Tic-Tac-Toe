@@ -44,9 +44,17 @@ const changePassword = function (data) {
   })
 }
 
+const index = function () {
+  return $.ajax({
+    url: app.host + '/games',
+    method: 'GET'
+  })
+}
+
 module.exports = {
   signUp,
   signIn,
   signOut,
-  changePassword
+  changePassword,
+  index
 }
