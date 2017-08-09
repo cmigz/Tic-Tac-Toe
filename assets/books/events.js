@@ -33,7 +33,7 @@ const onChangePassword = function (event) {
   let data = getFormFields(event.target)
   api.changePassword(data)
     .done(ui.changePasswordSuccess)
-    .fail(ui.fail)
+    .fail(ui.onChangePasswordFail)
 }
 
 const onGetGames = function (event) {

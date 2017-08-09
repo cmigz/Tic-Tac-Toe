@@ -25,7 +25,13 @@ const signOutSuccess = () => {
 }
 
 const changePasswordSuccess = () => {
-  console.log('Password Successfully Changed.')
+  $('#change-pass-sucess').removeClass('hidden')
+  $('#change-pass-fail').addClass('hidden')
+}
+
+const onChangePasswordFail = (error) => {
+  $('#change-pass-success').addClass('hidden')
+  $('#change-pass-fail').removeClass('hidden')
 }
 
 const onSignUpSuccess = (data) => {
@@ -44,5 +50,6 @@ module.exports = {
   onSignInSuccess,
   signOutSuccess,
   changePasswordSuccess,
-  onSignInFail
+  onSignInFail,
+  onChangePasswordFail
 }
