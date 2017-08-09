@@ -35,7 +35,6 @@ let oWinCount = 0
 // -----------------------------------------------------------
 const createBoard = function () {
   $('#signUp').hide()
-  $('.gameBoard').removeClass('hidden')
 }
 
 $('#hideButton').click(createBoard)
@@ -182,6 +181,7 @@ const gameReset = function () {
   winner = ' '
   turnCount = 0
   playerTurn = 'x'
+  $('.gameBoard').removeClass('hidden')
 }
 
 $('#reset').click(gameReset)
