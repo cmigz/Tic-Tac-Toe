@@ -8,6 +8,7 @@ const onSignInSuccess = (data) => {
   console.log(app)
   $('#sign-in-success').removeClass('hidden')
   $('#sign-in-error').addClass('hidden')
+  $('#sign-out-success').addClass('hidden')
 }
 
 const onSignInFail = (error) => {
@@ -19,6 +20,8 @@ const onSignInFail = (error) => {
 const signOutSuccess = () => {
   app.user = null
   console.log(app)
+  $('#sign-out-success').removeClass('hidden')
+  $('#sign-in-success').addClass('hidden')
 }
 
 const changePasswordSuccess = () => {
