@@ -18,17 +18,19 @@ const changePasswordSuccess = () => {
   console.log('Password Successfully Changed.')
 }
 
-const success = (data) => {
-  console.log(data)
+const onSignUpSuccess = (data) => {
+  $('#sign-up-success').removeClass('hidden')
+  $('#sign-up-error').addClass('hidden')
 }
 
-const fail = (error) => {
-  console.error(error)
+const onSignUpFail = (error) => {
+  $('#sign-up-success').addClass('hidden')
+  $('#sign-up-error').removeClass('hidden')
 }
 
 module.exports = {
-  fail,
-  success,
+  onSignUpFail,
+  onSignUpSuccess,
   signInSuccess,
   signOutSuccess,
   changePasswordSuccess
