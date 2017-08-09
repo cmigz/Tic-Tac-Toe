@@ -3,9 +3,16 @@
 const app = require('../scripts/app.js')
 
 // remove me before code-along
-const signInSuccess = (data) => {
+const onSignInSuccess = (data) => {
   app.user = data.user
   console.log(app)
+  $('#sign-in-success').removeClass('hidden')
+  $('#sign-in-error').addClass('hidden')
+}
+
+const onSignInFail = (error) => {
+  $('#sign-in-success').addClass('hidden')
+  $('#sign-in-error').removeClass('hidden')
 }
 
 // remove me before code-along
@@ -31,7 +38,8 @@ const onSignUpFail = (error) => {
 module.exports = {
   onSignUpFail,
   onSignUpSuccess,
-  signInSuccess,
+  onSignInSuccess,
   signOutSuccess,
-  changePasswordSuccess
+  changePasswordSuccess,
+  onSignInFail
 }
