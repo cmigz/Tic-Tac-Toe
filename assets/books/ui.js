@@ -9,8 +9,7 @@ const onSignInSuccess = (data) => {
   $('#sign-in-success').removeClass('hidden')
   $('#sign-in-error').addClass('hidden')
   $('#sign-out-success').addClass('hidden')
-  $('.gameBoard').removeClass('hidden')
-  $('#reset').removeClass('hidden')
+  $('#play').removeClass('hidden')
 }
 
 const onSignInFail = (error) => {
@@ -26,6 +25,7 @@ const signOutSuccess = () => {
   $('#sign-in-success').addClass('hidden')
   $('.gameBoard').addClass('hidden')
   $('#reset').addClass('hidden')
+  $('#play').addClass('hidden')
 }
 
 const changePasswordSuccess = () => {

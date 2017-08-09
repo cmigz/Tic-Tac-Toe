@@ -34,10 +34,11 @@ let oWinCount = 0
 // START - createBoard Function and Event -------------------
 // -----------------------------------------------------------
 const createBoard = function () {
-  $('#signUp').hide()
+  $('.gameBoard').removeClass('hidden')
+  $('#reset').removeClass('hidden')
 }
 
-$('#hideButton').click(createBoard)
+$('#play').click(createBoard)
 
 // -----------------------------------------------------------
 // End - createBoard Function and Event -------------------
