@@ -41,6 +41,7 @@ const onGetGames = function (event) {
   api.index()
     .then(ui.sucess)
     .catch(ui.fail)
+  console.log(api.index())
 }
 
 const onCreateGame = function (event) {
