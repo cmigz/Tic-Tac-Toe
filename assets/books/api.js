@@ -64,11 +64,31 @@ const createGame = function () {
   })
 }
 
+const updateGame = function (index, value, over) {
+  return $.ajax({
+    url: app.host + '/games/' + app.game.id,
+    method: 'PATHCH',
+    headers: {
+      Authorization: 'Token token=' + app.user.token
+    },
+    data: {
+      'game': {
+        'cell': {
+          'index': index,
+          'value': value
+        },
+        'over': over
+      }
+    }
+  })
+}
+
 module.exports = {
   signUp,
   signIn,
   signOut,
   changePassword,
   index,
-  createGame
+  createGame,
+  updateGame
 }

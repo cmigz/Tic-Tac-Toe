@@ -48,6 +48,15 @@ const onSignUpFail = (error) => {
   $('#sign-up-error').removeClass('hidden')
 }
 
+const onUpdateSuccess = function (data) {
+  console.log(data)
+}
+
+// if game update fails
+const onUpdateFail = function (error) {
+  console.error(error)
+}
+
 module.exports = {
   onSignUpFail,
   onSignUpSuccess,
@@ -55,5 +64,7 @@ module.exports = {
   signOutSuccess,
   changePasswordSuccess,
   onSignInFail,
-  onChangePasswordFail
+  onChangePasswordFail,
+  onUpdateSuccess,
+  onUpdateFail
 }

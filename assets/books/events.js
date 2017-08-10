@@ -51,11 +51,18 @@ const onCreateGame = function (event) {
     .catch(ui.fail)
 }
 
+const onUpdateGame = function (index, value, over) {
+  api.updateGame(index, value, over)
+    .then(ui.onUpdateSuccess)
+    .catch(ui.onUpdateFail)
+}
+
 module.exports = {
   onSignUp,
   onSignIn,
   onSignOut,
   onChangePassword,
   onGetGames,
-  onCreateGame
+  onCreateGame,
+  onUpdateGame
 }
