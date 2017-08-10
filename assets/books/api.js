@@ -67,7 +67,7 @@ const createGame = function () {
 const updateGame = function (index, value, over) {
   return $.ajax({
     url: app.host + '/games/' + app.game.id,
-    method: 'PATHCH',
+    method: 'PATCH',
     headers: {
       Authorization: 'Token token=' + app.user.token
     },

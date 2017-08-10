@@ -8,6 +8,7 @@ require('./assets/scripts/index.js')
 
 // styles
 require('./assets/styles/index.scss')
+const events = require('./assets/books/events')
 
 console.log('functional')
 
@@ -26,6 +27,9 @@ let winner = '' // Options in checkForWin = playerX, playerO, Draw
 let playerTurn = 'x'
 let xWinCount = 0
 let oWinCount = 0
+let value
+let index
+let over
 // -----------------------------------------------------------
 // END - Game Variables -------------------
 // -----------------------------------------------------------
@@ -61,6 +65,12 @@ const addClass = function () {
         console.log(turnCount)
         playerTurn = 'o'
         console.log(playerTurn)
+        if ($(this).is('#A1')) {
+          value = 'x'
+          index = 0
+          over = false
+          events.onUpdateGame(index, value, over)
+        }
       }
     }
   } else {

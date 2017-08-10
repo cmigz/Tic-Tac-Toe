@@ -47,7 +47,7 @@ const onGetGames = function (event) {
 const onCreateGame = function (event) {
   event.preventDefault()
   api.createGame()
-    .then(ui.success)
+    .then(ui.onCreateGameSuccess)
     .catch(ui.fail)
 }
 
