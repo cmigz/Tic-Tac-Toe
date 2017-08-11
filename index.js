@@ -70,6 +70,46 @@ const addClass = function () {
           index = 0
           over = false
           events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#A2')) {
+          value = 'x'
+          index = 1
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#A3')) {
+          value = 'x'
+          index = 2
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#B1')) {
+          value = 'x'
+          index = 3
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#B2')) {
+          value = 'x'
+          index = 4
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#B3')) {
+          value = 'x'
+          index = 5
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#C1')) {
+          value = 'x'
+          index = 6
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#C2')) {
+          value = 'x'
+          index = 7
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#C3')) {
+          value = 'x'
+          index = 8
+          over = false
+          events.onUpdateGame(index, value, over)
         }
       }
     }
@@ -83,6 +123,52 @@ const addClass = function () {
         console.log(turnCount)
         playerTurn = 'x'
         console.log(playerTurn)
+        if ($(this).is('#A1')) {
+          value = 'o'
+          index = 0
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#A2')) {
+          value = 'o'
+          index = 1
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#A3')) {
+          value = 'o'
+          index = 2
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#B1')) {
+          value = 'o'
+          index = 3
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#B2')) {
+          value = 'o'
+          index = 4
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#B3')) {
+          value = 'o'
+          index = 5
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#C1')) {
+          value = 'o'
+          index = 6
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#C2')) {
+          value = 'o'
+          index = 7
+          over = false
+          events.onUpdateGame(index, value, over)
+        } else if ($(this).is('#C3')) {
+          value = 'o'
+          index = 8
+          over = false
+          events.onUpdateGame(index, value, over)
+        }
       }
     }
   }
