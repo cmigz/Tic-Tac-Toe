@@ -18,17 +18,53 @@
       </header>
 
       <main>
-        <div id="signUp">
-          <form class="" action="index.html" method="post">
-            <input type="text" name="userEmail" value="" placeholder="User Email">
-            <input type="text" name="userPassWord" value="" placeholder="Password">
-            <button type="submit" name="button" class="btn btn-default">Sign In</button>
-            <button type="submit" name="button" class="btn btn-default">Sign Up</button>
-          </form>
-        </div>
-        <div>
-          <button type="button" name="button" class="btn btn-default" id="hideButton">Hide</button>
-        </div>
+
+              <form id="sign-up">
+                <fieldset>
+                  <legend>Sign up!</legend>
+                  <input type="text" name="credentials[email]" value="" placeholder="email">
+                  <input type="password" name="credentials[password]" value="" placeholder="password">
+                  <input type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation">
+                  <p id = "sign-up-success" class = "successMessage hidden">Sign Up Successfull!</p>
+                  <p id = "sign-up-error" class = "errorMessage hidden">Sorry! Username Taken or Passwords Do Not Match</p>
+                  <input type="submit" name="submit" value="Sign up!!">
+                </fieldset>
+              </form>
+
+              <form id="sign-in">
+                <fieldset>
+                  <legend>Sign in!</legend>
+                  <input type="text" name="credentials[email]" value="" placeholder="email">
+                  <input type="password" name="credentials[password]" value="" placeholder="password">
+                  <p id = "sign-in-success" class = "successMessage hidden">Sign In Successfull!</p>
+                  <p id = "sign-in-error" class = "errorMessage hidden">Unsuccessfull, Username or Password Incorrect</p>
+                  <input type="submit" name="submit" value="Sign in!">
+                </fieldset>
+              </form>
+
+              <form id="sign-out">
+                <fieldset>
+                  <legend>Sign out!</legend>
+                  <input type="submit" name="submit" value="Sign out!">
+                  <p id = "sign-out-success" class = "successMessage hidden">Signed Out!</p>
+                </fieldset>
+              </form>
+
+              <form id="change-password">
+                <fieldset>
+                  <legend>Change Password</legend>
+                  <input type="password" name="passwords[old]" value="" placeholder="Old Password">
+                  <input type="password" name="passwords[new]" value="" placeholder="New Password">
+                  <p id = "change-pass-sucess" class = "successMessage hidden">Password Successfully Changed!</p>
+                  <p id = "change-pass-fail" class = "errorMessage hidden">Original Password Incorrect!</p>
+                  <input type="submit" name="submit" value="Change Password">
+                </fieldset>
+              </form>
+
+              <button id = "play" class = "hidden">Play a Game!</button>
+
+
+
         <div class="gameBoard hidden">
           <div class="col">
             <div class="box" id="A1">A1</div>
@@ -46,7 +82,7 @@
             <div class="box" id="C3">C3</div>
           </div>
         </div>
-        <button type="button" id="reset">New Game</button>
+        <button type="button" id="reset" class="hidden">New Game</button>
         <div id="xWins" class="hidden">
           <h2> Player X Wins!</h2>
         </div>
@@ -57,6 +93,7 @@
           <h2>Draw!</h2>
         </div>
       </main>
+      <button id = 'get-games'>Get Games</button>
 
       <footer>
         <!-- TODO Add Footer -->
