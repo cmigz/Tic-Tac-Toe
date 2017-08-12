@@ -86,7 +86,7 @@ Final Version:
 - Need to dry the code up as time progresses and skills improve.
 - Add a footer that displays logged in user's username with links to other projects as they are developed
 - Apply customized CSS now that everything is functioning
-[logo]: http://imgur.com/a/OpbYO
+[logo]: http://i.imgur.com/q1Vv4fr.jpg
 
 ## WireFrames
 
