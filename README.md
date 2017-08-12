@@ -86,20 +86,29 @@ Final Version:
 - Need to dry the code up as time progresses and skills improve.
 - Add a footer that displays logged in user's username with links to other projects as they are developed
 - Apply customized CSS now that everything is functioning
+
 ![alt text](http://i.imgur.com/q1Vv4fr.jpg)
 
 ## WireFrames
 
 Game Wireframe:
-![alt text](http://imgur.com/w3Itm4b)
+
+![alt text](http://i.imgur.com/w3Itm4b.jpg)
+
+***
 
 Logic Wireframe Part 1:
-[logo]: http://imgur.com/q6AY1Zd
+
+![alt text](http://i.imgur.com/q6AY1Zd.jpg)
+
 Logic Wireframe Part 2:
-[logo]: http://imgur.com/oh6qGnz
+
+![alt text](http://i.imgur.com/oh6qGnz.jpg)
+
+***
 
 Final Requirement Checklist:
-[logo]: http://imgur.com/OCh5G2d
+![alt text](http://i.imgur.com/OCh5G2d.jpg)
 
 ## User Stories
 
