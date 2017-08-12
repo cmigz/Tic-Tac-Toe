@@ -1,11 +1,11 @@
 # Tic-Tac-Toe
-# By: Christian Mignacca
+### By: Christian Mignacca
 
 # Introduction
 
 Welcome to my Tic-Tac-Toe game.  This project is a means of showing the skills developed through just about three weeks of GA's Web Development Immersive Program.
 
-This project uses a custom built game engine to play the class game Tic-Tac-Toe.  Using several technologies this game will allow users to play local 1 vs 1 games of Tic-Tac-Toe and login so they can keep track or their games and wins.
+This project uses a custom built game engine to play the classic game Tic-Tac-Toe.  Using several technologies this game will allow users to play local 1 vs 1 games of Tic-Tac-Toe and login so they can keep track or their games.
 
 ## Final Submission Link
 
@@ -78,25 +78,28 @@ Final Version:
 9.) Revisit all steps to ensure all requirements are met
   - Re-Deploy Final Version
 
-## Issue Que
+## ~~Unsolved~~ Yet To Be Solved Issues
 
-[] CSS broken on smaller screens
-[] Need to figure out how to exhange game status with API
-[] Alter CSS so game looks better
-[] Site is not as responsive as much as I'd like at the moment
-
-## Unsolved Issues
-
-TODO Collect issues at end of process
+- CSS broken on smaller screens; not responsive.
+- Expand upon data sent to and received from API.
+- Would like to implement a "Game Profile" feature where you can change the theme of the game.
+- Need to dry the code up as time progresses and skills improve.
+- Add a footer that displays logged in user's username with links to other projects as they are developed
+- Apply customized CSS now that everything is functioning
+[logo]: http://imgur.com/a/OpbYO
 
 ## WireFrames
 
-Game Wireframe: <http://imgur.com/w3Itm4b>
+Game Wireframe:
+[logo]: http://imgur.com/w3Itm4b
 
-Logic Wireframe Part 1: <http://imgur.com/q6AY1Zd>
-Logic Wireframe Part 2: <http://imgur.com/oh6qGnz>
+Logic Wireframe Part 1:
+[logo]: http://imgur.com/q6AY1Zd
+Logic Wireframe Part 2:
+[logo]: http://imgur.com/oh6qGnz
 
-Final Requirement Checklist: <http://imgur.com/OCh5G2d>
+Final Requirement Checklist:
+[logo]: http://imgur.com/OCh5G2d
 
 ## User Stories
 
