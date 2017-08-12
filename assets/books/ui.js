@@ -62,6 +62,10 @@ const onUpdateFail = function (error) {
   console.error(error)
 }
 
+const getSuccess = function (data) {
+  $('#gameStats').html('<div class="successMessage"> Gams Played:' + data.games.length + '</div>')
+}
+
 module.exports = {
   onSignUpFail,
   onSignUpSuccess,
@@ -72,5 +76,6 @@ module.exports = {
   onChangePasswordFail,
   onUpdateSuccess,
   onUpdateFail,
-  onCreateGameSuccess
+  onCreateGameSuccess,
+  getSuccess
 }

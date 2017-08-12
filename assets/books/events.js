@@ -39,7 +39,7 @@ const onChangePassword = function (event) {
 const onGetGames = function (event) {
   event.preventDefault()
   api.index()
-    .then(ui.sucess)
+    .then(ui.getSuccess)
     .catch(ui.fail)
   console.log(api.index())
 }
